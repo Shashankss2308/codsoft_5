@@ -16,7 +16,7 @@ def display_contacts(contact_book):
             print(key, contact_book[key])
 
 def main():
-    contact_book = [] # Dictionary to store contacts
+    contact_book = {} # Dictionary to store contacts
 
     while True:
         show_menu()
@@ -26,7 +26,7 @@ def main():
             display_contacts(contact_book)
 
         elif choice == "2":
-            name = input("Enter the contact name: ")
+            name = input("Enter the name: ")
             det =input("Enter the contact number, email and city address ")
             detail = det.split(',')
             contact_book[name] = detail
